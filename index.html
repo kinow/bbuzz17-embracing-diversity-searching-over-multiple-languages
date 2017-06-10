@@ -44,7 +44,7 @@
 				<section>
           <h3>$WhoAreWe</h3>
           <h6 style='text-align: left; font-size: 80%;'>Tommaso Teofili <br/><span style="font-size: 60%"><i class="fa fa-twitter" aria-hidden="true"></i> @tteofili</span></h6>
-          <ul style='font-size: 20px;'>
+          <ul style='font-size: 60%;'>
             <li>Senior Research Scientist, Adobe Systems, Rome</li>
             <li>Member of Apache Software Foundation,<br/></li>
             <li>PMC Chair, Apache Lucene</li>
@@ -53,7 +53,7 @@
           <br/>
           <br/>
           <h6 style='text-align: left; font-size: 80%;'>Suneel Marthi <br/><span style="font-size: 60%"><i class="fa fa-twitter" aria-hidden="true"></i> @suneelmarthi</span></h6>
-          <ul style='font-size: 20px;'>
+          <ul style='font-size: 60%;'>
             <li>Principal Software Engineer, Office of Technology, Red Hat</li>
             <li>Committer and PMC on Apache Mahout, Apache OpenNLP, Apache Streams</li>
           </ul>
@@ -114,7 +114,7 @@ e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
         <section>
           <dl>
             <dt>How to translate a word &rarr; lookup in dictionary</dt>
-            <dd>Ge­bäu­de — building, house, tower.</dd>
+            <dd>Ge­b&auml;u­de — building, house, tower.</dd>
             <dt>Multiple translations</dt>
             <dd>some more frequent than others<br/>
             for instance: house and building most common</dd>
@@ -125,7 +125,7 @@ e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
           <table>
             <thead>
               <tr>
-                <th>Translation of Ge­bäu­de</th><th>Count</th><th>Probability</th>
+                <th>Translation of Ge­b&auml;u­de</th><th>Count</th><th>Probability</th>
               </tr>
             </thead>
             <tbody>
@@ -147,7 +147,7 @@ e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
               <li>In a parallel text (or when we translate), we align words in one language with the word in the other<br/>
               <table>
                 <tr>
-                  <td>Das</td><td>Gebäude</td><td>ist</td><td>hoch</td>
+                  <td>Das</td><td>Geb&auml;ude</td><td>ist</td><td>hoch</td>
                 </tr>
                 <tr>
                   <td style='text-align: center;'>&darr;</td><td style='text-align: center;'>&darr;</td><td style='text-align: center;'>&darr;</td><td style='text-align: center;'>&darr;</td>
@@ -183,7 +183,24 @@ e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
               <td>This</td><td>is</td><td>a</td><td>high&nbsp;&nbsp;&nbsp;</td><td>rise</td><td>building</td>
             </tr>
           </table>
-        </section>    
+        </section>
+        <section>
+          <h3>Phrase-based Translation</h3>
+        </section>
+        <section>
+          <h3>Alignment Function</h3>
+          <ul>
+            <li>Word-Based Models translate words as atomic units</li>
+            <li>Phrase-Based Models translate phrases as atomic units</li>
+            <li>Advantages:</li>
+            <ul>
+              <li>many-to-many translation can handle non-compositional phrases</li>
+              <li>use of local context in translation</li>
+              <li>the more data, the longer phrases can be learned</li>
+            </ul>
+            <li>&ldquo;Standard Model&rdquo;, used by Google Translate and others</li>
+          </ul>
+        </section>
 			</div>
 		</div>
 
