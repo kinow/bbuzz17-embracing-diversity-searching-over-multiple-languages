@@ -77,7 +77,7 @@
           <dt>Initial Conditions</dt>
           <dd>Lucene Index containing text from multiple languages</dd>
           <dt>User Query</dt>
-          <dd><code>“schokolade am stiel berlin alexanderplatz”</code> (<i>German</i>)</dd>
+          <dd><code>&ldquo;schokolade am stiel berlin alexanderplatz&rdquo;</code> (<i>German</i>)</dd>
           <dt>Search Corpus</dt>
           <dd>Corpora consisting of <i>Italian</i>, <i>German</i>, <i>English</i> documents indexed by Lucene</dd>
           <dt>Search Results</dt>
@@ -101,7 +101,7 @@
         </section>
         <section>
           <p style='text-align: left'>Generate Translations from Statistical Models trained on Bilingual Corpora.</p>
-          <p style='text-align: left'>Translation happens per a probability distribution p(e/f)</p>
+          <p style='text-align: left'>Translation happens per a probability distribution <code>p(e/f)</code></p>
           <pre>E = string in the target language (English)
 
 F = string in the source language (Spanish)
@@ -164,7 +164,7 @@ e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
           <h3>Alignment Function</h3>
           <ul>
             <li>Define the Alignment with an Alignment Function</li>
-            <li>Mapping an English target word at position i to a German source word at position j with a function a : i &rarr; j</li>
+            <li>Mapping an English target word at position <code>i</code> to <code>a</code> German source word at position j with a function <code>a : i &rarr; j</code></li>
             <li>Example</li>
           </ul>
           <code>a : {1 &rarr; 1, 2 &rarr; 2, 3 &rarr; 3, 4 &rarr; 4}</code>
