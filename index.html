@@ -96,6 +96,51 @@
             <li>Embrace Diversity</li>
           </ul>
         </section>
+        <section>
+          <h3>What is Machine Translation ?</h3>
+        </section>
+        <section>
+          <p style='text-align: left'>Generate Translations from Statistical Models trained on Bilingual Corpora.</p>
+          <p style='text-align: left'>Translation happens per a probability distribution p(e/f)</p>
+          <pre>E = string in the target language (English)
+
+F = string in the source language (Spanish)
+
+e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
+        </section>
+        <section>
+          <h3>Word-based Translation</h3>
+        </section>
+        <section>
+          <dl>
+            <dt>How to translate a word &rarr; lookup in dictionary</dt>
+            <dd>Ge­bäu­de — building, house, tower.</dd>
+            <dt>Multiple translations</dt>
+            <dd>some more frequent than others<br/>
+            for instance: house and building most common</dd>
+          </dl>
+        </section>
+        <section>
+          <p>Look at a parallel corpus<br/>(German text along with English translation)</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Translation of Ge­bäu­de</th><th>Count</th><th>Probability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>house</td><td>5.28 billion</td><td>0.51</td>
+              </tr>
+              <tr>
+                <td>building</td><td>4.16 billion</td><td>0.402</td>
+              </tr>
+              <tr>
+                <td>tower</td><td>9.28 billion</td><td>0.09</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 			</div>
 		</div>
 
