@@ -160,6 +160,30 @@ e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
               <li>Word positions are numbered 1–4</li>
             </ul>
         </section>
+        <section>
+          <h3>Alignment Function</h3>
+          <ul>
+            <li>Define the Alignment with an Alignment Function</li>
+            <li>Mapping an English target word at position i to a German source word at position j with a function a : i &rarr; j</li>
+            <li>Example</li>
+          </ul>
+          <code>a : {1 &rarr; 1, 2 &rarr; 2, 3 &rarr; 3, 4 &rarr; 4}</code>
+        </section>
+        <section>
+          <h3>One-to-Many Translation</h3>
+          <p>A source word could translate into multiple target words</p>
+          <table>
+            <tr>
+              <td>Das</td><td>is</td><td>ein</td><td colspan='3' style='text-align: center;'>Hochhaus&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+              <td style='text-align: center;'>&darr;</td><td style='text-align: center;'>&darr;</td><td style='text-align: center;'>&darr;</td><td style='text-align: center;'>&#8601;</td><td style='text-align: center;'>&darr;</td><td style='text-align: center;'>&#8600;</td>
+            </tr>
+            <tr>
+              <td>This</td><td>is</td><td>a</td><td>high&nbsp;&nbsp;&nbsp;</td><td>rise</td><td>building</td>
+            </tr>
+          </table>
+        </section>    
 			</div>
 		</div>
 
