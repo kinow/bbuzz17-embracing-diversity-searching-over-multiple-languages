@@ -221,6 +221,46 @@ e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
             <li>Phrases are reordered</li>
           </ul>
         </section>
+        <section>
+          <h3>Decoding</h3>
+        </section>
+        <section>
+          <ul>
+            <li>We have a mathematical model for translation <code>p(e|f)</code></li>
+            <li>Task of decoding: find the translation ebest with highest probability<br/>
+            <center><code>ebest = argmax p(e|f)</code></center>
+            </li>
+            <li>Two types of error</li>
+            <ul>
+              <li>the most probable translation is bad &rarr; fix the model</li>
+              <li>search does not find the most probable translation &rarr; fix the search</li>
+            </ul>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Apache Joshua</h3>
+        </section>
+        <section>
+          <ul style='font-size: 80%;'>
+            <li>Statistical Machine Translation Decoder for phrase-based and hierarchical machine translation</li>
+            <li>Written in Java</li>
+            <li>Provide 64 language packs for machine translation</li>
+            <ul>
+              <li>https://cwiki.apache.org/confluence/display/JOSHUA/Language+Packs</li>
+            </ul>
+            <li>Project initiated by Johns Hopkins Univ. and University of Pennsylvania</li>
+            <li>Used extensively by Amazon.com, NASA JPL</li>
+            <li>https://cwiki.apache.org/confluence/display/JOSHUA</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Credits</h3>
+          <ul>
+            <li>Joern Kottmann &mdash; PMC Chair, Apache OpenNLP</li>
+            <li>Matt Post &mdash; PMC Chair, Apache Joshua</li>
+          </ul>
+        </section>
 			</div>
 		</div>
 
