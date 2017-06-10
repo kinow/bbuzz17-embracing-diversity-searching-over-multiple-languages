@@ -79,7 +79,7 @@
           <dt>User Query</dt>
           <dd><code>&ldquo;schokolade am stiel berlin alexanderplatz&rdquo;</code> (<i>German</i>)</dd>
           <dt>Search Corpus</dt>
-          <dd>Corpora consisting of <i>Italian</i>, <i>German</i>, <i>English</i> documents indexed by Lucene</dd>
+          <dd>Corpora consisting of <i>Italian</i>, <i>German</i>, and <i>English</i> documents indexed by Lucene</dd>
           <dt>Search Results</dt>
           <dd>Retrieve query results from translated into <i>German</i> from all languages</dd>
           </dl>
@@ -238,7 +238,27 @@ e = argmax p(e/f) = argmax p(f/e) * p(e)</pre>
             </ul>
           </ul>
         </section>
-
+        <section>
+          <h3>Translation Process</h3>
+          <p>Translate this query from German into English</p>
+          <table>
+            <tr>
+              <td style="text-align: center;">er</td><td>trinkt</td><td>ja</td><td>noch</td><td>nichts</td>
+            </tr>
+          </table>
+          <table id='special-table'>
+            <tr>
+              <td class="fragment" data-fragment-index="1">er</td><td class='borderless'>&nbsp;</td><td style="text-align: right;" class="fragment" data-fragment-index="3">trinkt</td><td class='borderless'>&nbsp;</td><td class="fragment" data-fragment-index="2">ja noch nichts</td>
+            </tr>
+            <tr>
+              <td class='fragment borderless' data-fragment-index="1" style="text-align: center;">&darr;</td><td class='borderless'>&nbsp;</td><td class='borderless fragment' style="text-align: right;" data-fragment-index="3">&#8600;</td><td class='borderless'>&nbsp;</td><td class='borderless fragment' style="text-align: left;" data-fragment-index="2">&#8601;</td>
+            </tr>
+            <tr>
+              <td style="text-align: center;" class="fragment" data-fragment-index="1">he</td><td class='borderless'>&nbsp;</td><td class="fragment" data-fragment-index="2">does not yet</td><td class='borderless'>&nbsp;</td><td class="fragment" data-fragment-index="3">drink</td>
+            </tr>
+          </table>
+          <p>Pick an input phrase, translate</p>
+        </section>
         <section>
           <h3>Apache Joshua</h3>
         </section>
